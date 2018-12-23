@@ -28,7 +28,6 @@ class Comments extends Component{
           </Media>
         </div>
       );
-
     });
 
     return(
