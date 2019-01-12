@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle, Media, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import Comments from './CommentsComponent';
+import CommentForm from './CommentFormComponent';
 import { Link } from 'react-router-dom';
   function RenderDish({dish}){
     if(dish != null){
@@ -36,6 +37,7 @@ import { Link } from 'react-router-dom';
         <div className="col-12 col-md-5 m-1">
           <Media heading>Comments</Media>
           {commentsList}
+          <CommentForm />
         </div>
       );
     }
